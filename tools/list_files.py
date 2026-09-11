@@ -1,6 +1,7 @@
 import os
+from agents import function_tool
 
-
+@function_tool
 def list_files(path: str) -> str:
     if not os.path.exists(path):
         return f"Path not found: {path}"
@@ -19,5 +20,5 @@ def list_files(path: str) -> str:
     return f"Contents of {path}:\n" + "\n".join(items)
 
 
-if __name__ == "__main__":
-    print(list_files(".."))
+# if __name__ == "__main__":
+#     print(list_files(".."))
