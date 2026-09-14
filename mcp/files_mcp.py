@@ -73,4 +73,9 @@ def edit_file(path: str, old_text: str, new_text: str, root: Optional[str] = Non
     return f"Successfully created {abs_path}"
 
 if __name__ == "__main__":
-    mcp.run()
+    port = 8000
+    url = f"http://localhost:{port}"
+    print(f"[TEST] Starting files-mcp server on port {port}")
+    print(f"[TEST] Server URL: {url}")
+    print(f"[TEST] Logging initialized - server is running for testing")
+    mcp.run(port=port)
