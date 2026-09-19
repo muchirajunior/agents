@@ -2,6 +2,10 @@
 
 This project contains examples of AI agents, including a file manager agent in the `agents/` folder.
 
+Screenshot
+![Screenshot](screenshots/image.png)
+
+
 ## Setup
 
 ```bash
